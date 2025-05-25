@@ -1,0 +1,196 @@
+{
+  "user": {
+    "name": "Dr. John Smith",
+    "avatar": "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=100&h=100&fit=crop&crop=face",
+    "role": "Healthcare Professional",
+    "notifications": 3
+  },
+  "healthIndicators": [
+    {
+      "id": "heart",
+      "label": "Healthy Heart",
+      "status": "healthy",
+      "position": { "top": "25%", "left": "45%" },
+      "color": "#4F46E5",
+      "value": 95
+    },
+    {
+      "id": "leg",
+      "label": "Healthy Leg",
+      "status": "healthy",
+      "position": { "top": "70%", "left": "35%" },
+      "color": "#06B6D4",
+      "value": 88
+    }
+  ],
+  "healthStatusCards": [
+    {
+      "id": "lungs",
+      "title": "Lungs",
+      "date": "26 Oct 2021",
+      "progress": 85,
+      "status": "warning",
+      "icon": "🫁",
+      "color": "#EF4444",
+      "trend": "up",
+      "lastCheckup": "2 days ago"
+    },
+    {
+      "id": "teeth",
+      "title": "Teeth",
+      "date": "26 Oct 2021",
+      "progress": 92,
+      "status": "good",
+      "icon": "🦷",
+      "color": "#10B981",
+      "trend": "stable",
+      "lastCheckup": "1 week ago"
+    },
+    {
+      "id": "bone",
+      "title": "Bone",
+      "date": "26 Oct 2021",
+      "progress": 78,
+      "status": "warning",
+      "icon": "🦴",
+      "color": "#F59E0B",
+      "trend": "down",
+      "lastCheckup": "3 days ago"
+    }
+  ],
+  "calendarData": {
+    "2021": {
+      "10": {
+        "name": "October",
+        "days": [
+          { "date": 25, "appointments": ["10:00", "11:00", "12:00"] },
+          { "date": 26, "appointments": ["08:00", "09:00", "10:00"] },
+          { "date": 27, "appointments": ["12:00", "13:00"] },
+          { "date": 28, "appointments": ["10:00", "11:00"] },
+          { "date": 29, "appointments": ["14:00", "16:00"] },
+          { "date": 30, "appointments": ["12:00", "14:00", "15:00"] },
+          { "date": 31, "appointments": ["09:00", "10:00", "11:00"] }
+        ]
+      },
+      "11": {
+        "name": "November",
+        "days": [
+          { "date": 1, "appointments": ["09:00", "11:00"] },
+          { "date": 2, "appointments": ["10:00", "14:00", "16:00"] },
+          { "date": 3, "appointments": ["08:00", "12:00"] },
+          { "date": 4, "appointments": ["09:00", "13:00", "15:00"] },
+          { "date": 5, "appointments": ["10:00", "11:00", "14:00"] },
+          { "date": 6, "appointments": ["08:00", "16:00"] },
+          { "date": 7, "appointments": ["09:00", "12:00", "15:00"] }
+        ]
+      },
+      "9": {
+        "name": "September",
+        "days": [
+          { "date": 20, "appointments": ["09:00", "11:00"] },
+          { "date": 21, "appointments": ["10:00", "14:00"] },
+          { "date": 22, "appointments": ["08:00", "12:00", "16:00"] },
+          { "date": 23, "appointments": ["09:00", "13:00"] },
+          { "date": 24, "appointments": ["10:00", "11:00"] },
+          { "date": 25, "appointments": ["08:00", "15:00"] },
+          { "date": 26, "appointments": ["09:00", "12:00"] }
+        ]
+      }
+    }
+  },
+  "appointmentCards": [
+    {
+      "id": "dentist",
+      "title": "Dentist",
+      "time": "09:00-11:00",
+      "doctor": "Dr. Cameron Williamson",
+      "type": "dentist",
+      "color": "#4F46E5",
+      "icon": "🦷",
+      "priority": "high"
+    },
+    {
+      "id": "physiotherapy",
+      "title": "Physiotherapy Appointment",
+      "time": "11:00-12:00",
+      "doctor": "Dr. Kevin Djones",
+      "type": "physiotherapy",
+      "color": "#8B5CF6",
+      "icon": "🏃",
+      "priority": "medium"
+    }
+  ],
+  "upcomingSchedule": [
+    {
+      "day": "Thursday",
+      "date": "Oct 28, 2021",
+      "appointments": [
+        {
+          "id": "checkup",
+          "title": "Health checkup complete",
+          "time": "11:00 AM",
+          "icon": "📋",
+          "color": "#E0E7FF",
+          "doctor": "Dr. Sarah Wilson",
+          "duration": "30 min"
+        },
+        {
+          "id": "ophthalmologist",
+          "title": "Ophthalmologist",
+          "time": "14:00 PM",
+          "icon": "👁️",
+          "color": "#FEF3C7",
+          "doctor": "Dr. Michael Brown",
+          "duration": "45 min"
+        }
+      ]
+    },
+    {
+      "day": "Saturday",
+      "date": "Oct 30, 2021",
+      "appointments": [
+        {
+          "id": "cardiologist",
+          "title": "Cardiologist",
+          "time": "12:00 PM",
+          "icon": "❤️",
+          "color": "#FECACA",
+          "doctor": "Dr. Emily Davis",
+          "duration": "60 min"
+        },
+        {
+          "id": "neurologist",
+          "title": "Neurologist",
+          "time": "16:00 PM",
+          "icon": "🧠",
+          "color": "#E0E7FF",
+          "doctor": "Dr. James Miller",
+          "duration": "45 min"
+        }
+      ]
+    }
+  ],
+  "activityData": {
+    "weeklyAppointments": 3,
+    "chartData": [
+      { "day": "Mon", "value": 2, "appointments": ["General Checkup", "Dental"] },
+      { "day": "Tues", "value": 3, "appointments": ["Cardiology", "Neurology", "Physical Therapy"] },
+      { "day": "Wed", "value": 1, "appointments": ["Eye Exam"] },
+      { "day": "Thurs", "value": 4, "appointments": ["Surgery Consultation", "Blood Test", "X-Ray", "Follow-up"] },
+      { "day": "Fri", "value": 2, "appointments": ["Dermatology", "Orthopedic"] },
+      { "day": "Sat", "value": 3, "appointments": ["Emergency", "Pediatric", "Gynecology"] },
+      { "day": "Sun", "value": 1, "appointments": ["Emergency Only"] }
+    ]
+  },
+  "navigationItems": [
+    { "id": "dashboard", "label": "Dashboard", "icon": "LayoutDashboard", "active": true, "count": null },
+    { "id": "history", "label": "History", "icon": "History", "count": 12 },
+    { "id": "calendar", "label": "Calendar", "icon": "Calendar", "count": 8 },
+    { "id": "appointments", "label": "Appointments", "icon": "Clock", "count": 5 },
+    { "id": "statistics", "label": "Statistics", "icon": "BarChart3", "count": null },
+    { "id": "tests", "label": "Tests", "icon": "FileText", "count": 3 },
+    { "id": "chat", "label": "Chat", "icon": "MessageCircle", "count": 2 },
+    { "id": "support", "label": "Support", "icon": "HelpCircle", "count": null },
+    { "id": "setting", "label": "Setting", "icon": "Settings", "count": null }
+  ]
+}

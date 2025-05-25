@@ -1,0 +1,563 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: "Inter", system-ui, sans-serif;
+  }
+}
+
+@layer utilities {
+  .animate-in {
+    animation-fill-mode: both;
+  }
+
+  .slide-in-from-top-2 {
+    animation: slideInFromTop2 0.3s ease-out;
+  }
+
+  .slide-in-from-bottom-2 {
+    animation: slideInFromBottom2 0.3s ease-out;
+  }
+
+  .slide-in-from-left {
+    animation: slideInFromLeft 0.5s ease-out;
+  }
+
+  .slide-in-from-right {
+    animation: slideInFromRight 0.5s ease-out;
+  }
+
+  .slide-in-from-bottom {
+    animation: slideInFromBottom 0.5s ease-out;
+  }
+
+  /* Responsive Text Utilities */
+  .text-responsive-xs {
+    font-size: 0.625rem; /* 10px */
+    line-height: 0.875rem; /* 14px */
+  }
+
+  .text-responsive-sm {
+    font-size: 0.75rem; /* 12px */
+    line-height: 1rem; /* 16px */
+  }
+
+  .text-responsive-base {
+    font-size: 0.875rem; /* 14px */
+    line-height: 1.25rem; /* 20px */
+  }
+
+  .text-responsive-lg {
+    font-size: 1rem; /* 16px */
+    line-height: 1.5rem; /* 24px */
+  }
+
+  .text-responsive-xl {
+    font-size: 1.125rem; /* 18px */
+    line-height: 1.75rem; /* 28px */
+  }
+
+  .text-responsive-2xl {
+    font-size: 1.25rem; /* 20px */
+    line-height: 1.75rem; /* 28px */
+  }
+
+  .text-responsive-3xl {
+    font-size: 1.5rem; /* 24px */
+    line-height: 2rem; /* 32px */
+  }
+
+  .text-responsive-4xl {
+    font-size: 1.875rem; /* 30px */
+    line-height: 2.25rem; /* 36px */
+  }
+}
+
+@keyframes slideInFromTop2 {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromBottom2 {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Animation delays */
+.delay-100 {
+  animation-delay: 100ms;
+}
+
+.delay-200 {
+  animation-delay: 200ms;
+}
+
+.delay-300 {
+  animation-delay: 300ms;
+}
+
+.delay-400 {
+  animation-delay: 400ms;
+}
+
+.delay-500 {
+  animation-delay: 500ms;
+}
+
+/* Responsive text scaling for all screen sizes */
+@media (max-width: 320px) {
+  /* Extra small phones */
+  .text-responsive-xs {
+    font-size: 0.5rem;
+    line-height: 0.75rem;
+  }
+  .text-responsive-sm {
+    font-size: 0.625rem;
+    line-height: 0.875rem;
+  }
+  .text-responsive-base {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+  .text-responsive-lg {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  .text-responsive-xl {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .text-responsive-2xl {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
+  .text-responsive-3xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+  .text-responsive-4xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .calendar-time-box {
+    font-size: 0.5rem;
+    line-height: 0.75rem;
+    padding: 1px 2px;
+    min-height: 12px;
+  }
+
+  .calendar-day-cell {
+    min-height: 50px;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 480px) {
+  /* Small phones */
+  .text-responsive-xs {
+    font-size: 0.625rem;
+    line-height: 0.875rem;
+  }
+  .text-responsive-sm {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+  .text-responsive-base {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  .text-responsive-lg {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .text-responsive-xl {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+  .text-responsive-2xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+  .text-responsive-3xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .text-responsive-4xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .calendar-time-box {
+    font-size: 0.625rem;
+    line-height: 0.875rem;
+    padding: 2px 4px;
+    min-height: 16px;
+  }
+
+  .calendar-day-cell {
+    min-height: 60px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 640px) {
+  /* Large phones */
+  .text-responsive-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+  .text-responsive-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  .text-responsive-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .text-responsive-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+  .text-responsive-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+  .text-responsive-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .text-responsive-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+  .text-responsive-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .calendar-time-box {
+    font-size: 0.75rem;
+    line-height: 1rem;
+    padding: 2px 6px;
+    min-height: 18px;
+  }
+
+  .calendar-day-cell {
+    min-height: 70px;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 768px) {
+  /* Small tablets */
+  .text-responsive-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+  .text-responsive-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  .text-responsive-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .text-responsive-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+  .text-responsive-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+  .text-responsive-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .text-responsive-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+  .text-responsive-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .calendar-time-box {
+    font-size: 0.75rem;
+    line-height: 1rem;
+    padding: 3px 8px;
+    min-height: 20px;
+  }
+
+  .calendar-day-cell {
+    min-height: 80px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Large tablets */
+  .text-responsive-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+  .text-responsive-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  .text-responsive-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .text-responsive-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+  .text-responsive-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+  .text-responsive-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .text-responsive-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+  .text-responsive-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .calendar-time-box {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    padding: 4px 8px;
+    min-height: 22px;
+  }
+
+  .calendar-day-cell {
+    min-height: 90px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  /* Small desktops */
+  .text-responsive-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+  .text-responsive-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  .text-responsive-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .text-responsive-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+  .text-responsive-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+  .text-responsive-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .text-responsive-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+  .text-responsive-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
+@media (min-width: 1441px) {
+  /* Large desktops */
+  .text-responsive-xs {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  .text-responsive-sm {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .text-responsive-base {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+  .text-responsive-lg {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+  .text-responsive-xl {
+    font-size: 1.375rem;
+    line-height: 1.875rem;
+  }
+  .text-responsive-2xl {
+    font-size: 1.625rem;
+    line-height: 2.125rem;
+  }
+  .text-responsive-3xl {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  .text-responsive-4xl {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  .calendar-time-box {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    padding: 4px 12px;
+    min-height: 24px;
+  }
+
+  .calendar-day-cell {
+    min-height: 100px;
+  }
+}
+
+/* Ensure text doesn't overflow in small containers */
+.calendar-time-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+/* Responsive grid adjustments for calendar */
+.calendar-grid-responsive {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 2px;
+}
+
+@media (min-width: 640px) {
+  .calendar-grid-responsive {
+    gap: 4px;
+  }
+}
+
+@media (min-width: 768px) {
+  .calendar-grid-responsive {
+    gap: 8px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .calendar-grid-responsive {
+    gap: 16px;
+  }
+}
+
+/* Hover effects */
+.hover-lift {
+  transition: transform 0.2s ease-in-out;
+}
+
+.hover-lift:hover {
+  transform: translateY(-2px);
+}
+
+/* Loading animations */
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Progress bar animation */
+@keyframes progressFill {
+  from {
+    width: 0%;
+  }
+}
+
+.progress-animate {
+  animation: progressFill 1s ease-out forwards;
+}
